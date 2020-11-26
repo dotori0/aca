@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Evaluation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <style>
+    .center {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    .nav-elem {
+      font-size: 3em;
+      margin: auto 1em;
+      color: gray;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 100; 
+      text-decoration: underline;
+    }
+    .nav-elem:hover {
+      font-size: 4em;
+      color:black;
+    }
+    .text-center {
+      text-align: center;
+    }
+  </style>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+  </script> 
+</head>
+<body>
+  <br><br>
+  <div class="center">
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a href="homepage.html"><img src="image/logo.png" alt="" width="100px" height="100px"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active nav-elem" href="class.html">Class</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active nav-elem" href="#">Attendence</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active nav-elem" href="#">Board</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active nav-elem" href="#">Score</a>
+      </li>
+    </ul>
+  </div>
+  <br><br>
+  <div class="container">
+    <label for="Q1">1. When $x=-2$, $f(x)=\sqrt{2x+a}+7$ has minimum value $m$. Find $a+m$.</label>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon3">answer</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-describedby="Q1">
+    </div>
+    
+    <br><br> 
+
+    <label for="Q2">2. The asymptote of rational function $y=\frac{2x-3}{x-4}$ is $x=p$, $y=q$. Find $p+q$.</label>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon3">answer</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-describedby="Q2">
+    </div>
+  
+    <br><br>
+
+    <label for="Q3">3. Leading coefficient of quadratic function $f(x)$ is a positive number. 
+      <br><br>$g(x)=\left\{\begin{matrix}-x+4&(x<-2)
+      \\ f(x)&(-2 \leq x \leq 1)
+      \\ -x-2 &(x > 1)
+      
+      \end{matrix}\right.$ <br><br>The range of $g(x)$ is real numbers. $g(x)$ has reverse function. Find $f(-2)+f(1)$. </label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">answer</span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="Q3">
+    </div>
+
+    <br><br>
+    <button class="btn btn-lg btn-outline-success">submit</button>
+  </div>
+</body>
+</html>
