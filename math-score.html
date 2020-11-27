@@ -40,6 +40,11 @@
     function notSupport() {
       alert('not supported in prototype. Use Math (1st grade)');
     }
+
+    function addScore(id) {
+      document.getElementById(id).innerHTML
+        = String(parseInt(document.getElementById(id).innerHTML) + 1) + ' ';
+    }
   </script>
 </head>
 <body>
@@ -69,27 +74,39 @@
     <ul class="list-group">
       <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action" style="border-top-width: 1px; border-radius: 10px;">
           Seungwoo Yoon
-          <input type="checkbox">
+          <div class="score">
+            <span id="1">5 </span><button class="btn btn-sm btn-secondary" onclick="addScore('1')">▲</button>
+          </div>
         </li>
       <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action" style="border-top-width: 1px; border-radius: 10px;">
           Subin Sin
-          <input type="checkbox">
+          <div class="score">
+            <span id="2">3 </span><button class="btn btn-sm btn-secondary" onclick="addScore('2')">▲</button>
+          </div>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action" style="border-top-width: 1px; border-radius: 10px;">
         Chanho Jeong
-        <input type="checkbox">
+        <div class="score">
+          <span id="3">1 </span><button class="btn btn-sm btn-secondary" onclick="addScore('3')">▲</button>
+        </div>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action" style="border-top-width: 1px; border-radius: 10px;">
         Albert Einstein
-        <input type="checkbox">
+        <div class="score">
+          <span id="4">99</span> <button class="btn btn-sm btn-secondary" onclick="addScore('4')">▲</button>
+        </div>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action" style="border-top-width: 1px; border-radius: 10px;">
         Isaac Newton
-        <input type="checkbox">
+        <div class="score">
+          <span id="5">78</span> <button class="btn btn-sm btn-secondary" onclick="addScore('5')">▲</button>
+        </div>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action" style="border-top-width: 1px; border-radius: 10px;">
         Charles Darwin
-        <input type="checkbox">
+        <div class="score">
+          <span id="6">59</span> <button class="btn btn-sm btn-secondary" onclick="addScore('6')">▲</button>
+        </div>
       </li>
     </ul>
     <button class="btn btn-lg btn-outline-success">Save</button>
